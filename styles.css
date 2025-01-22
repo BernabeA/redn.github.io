@@ -1,0 +1,50 @@
+
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url(pic/bg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+  
+   .slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+        .slider::-webkit-scrollbar {
+            display: none;
+        }
+        .slider > div {
+            scroll-snap-align: start;
+            flex: none;
+            width: 100%;
+            position: relative;
+        }
+        .slider > div video {
+            width: 100%;
+            height: auto;
+        }
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .slider-nav button {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+
+input{
+    opacity: 0.5;
+}
+
+textarea{
+    opacity: 0.5;
+}
