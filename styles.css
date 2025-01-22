@@ -48,3 +48,23 @@ input{
 textarea{
     opacity: 0.5;
 }
+.fb {
+    width: 30px;
+    height: 30px;
+    border:solid;
+    background-image: url(pic/communication_15047435.png);
+    background-size: cover;
+    border-color:#1f2937;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+.gh{
+    width: 30px;
+    height: 30px;
+    border:solid;
+    background-image: url(pic/icons8-github-50.png);
+    background-size: cover;
+    border-color:#1f2937;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
