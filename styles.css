@@ -151,3 +151,12 @@ p{
     font-family: cursive;
     text-indent: 5px;
 }
+@media(max-width:768px) {
+    .container{
+        padding: 10px
+    }
+    .gallery, .projects{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
