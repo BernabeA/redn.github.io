@@ -1,70 +1,149 @@
-
-   body {
-            font-family: 'Roboto', sans-serif;
-            background-image: url(pic/bg.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pic/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+header img.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: underline;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+nav a:hover {
+    background-color: rgb(99, 192, 192);
+    color: blue;
+    transition: 1s;
+    transform: scale(1.2);
+    box-shadow: inset#ffffff 3px 3px 6px 1px,
+                inset #6e749b4d -2px -2px 6px 0;
+}
+h2{
+    font-size: 2rem;
+}
+.container {
+    display: grid;
+    padding: 20px;
+    text-align: center;
+}
+.gallery, .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.gallery img{
+    width: 100%;
+    max-width: 150px;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    flex: 0 1 calc(20%-10px); 
+    transition: transform 0.3s ease;
+}
+.gallery img:hover{
+    transform: scale(2);
+}
+.projects img {
+    width: 100%;
+    max-width: 100px;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.projects img:hover{
+    transform: scale(2);
+}
+.project-item {
+    text-align: center;
+    gap: 10x;
   
-   .slider {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-        }
-        .slider::-webkit-scrollbar {
-            display: none;
-        }
-        .slider > div {
-            scroll-snap-align: start;
-            flex: none;
-            width: 100%;
-            position: relative;
-        }
-        .slider > div video {
-            width: 100%;
-            height: auto;
-        }
-        .slider-nav {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-        .slider-nav button {
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 0.5rem;
-            cursor: pointer;
-        }
+}
+.project-item img {
+    margin-bottom: 10px;
+}
+.project-description {
+    font-size: 0.7rem;
+    color: #333;
+    max-width: 100px;
+    word-wrap: break-word;
+}
+.profile-pic-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.profile-pic-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.headtext{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.subheadtext{
+    font-size: 1rem;
+    margin-top: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(68, 61, 61);
 
-input{
-    opacity: 0.5;
 }
-
-textarea{
-    opacity: 0.5;
+footer {
+    background-color: #1f2937;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
-.fb {
-    width: 30px;
-    height: 30px;
-    border:solid;
-    background-image: url(pic/communication_15047435.png);
-    background-size: cover;
-    border-color:#1f2937;
-    border-radius: 15px;
-    background-color: aliceblue;
+footer .social-icons {
+    margin-bottom: 10px;
 }
-.gh{
-    width: 30px;
-    height: 30px;
-    border:solid;
-    background-image: url(pic/icons8-github-50.png);
-    background-size: cover;
-    border-color:#1f2937;
-    border-radius: 15px;
-    background-color: aliceblue;
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 1s;
+}
+footer .social-icons a:hover {
+    color: blue;
+}
+span{
+    font-size: 30px;
+    font-weight: bolder;
+    text-indent: 5px;
+    font-family: cursive;
+}
+p{
+    font-family: cursive;
+    text-indent: 5px;
 }
