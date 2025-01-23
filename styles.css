@@ -26,6 +26,10 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #444;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 nav a {
     color: #fff;
