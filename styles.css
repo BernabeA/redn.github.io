@@ -155,7 +155,7 @@ p{
     font-family: cursive;
     text-indent: 5px;
 }
-@media(max-width:600px) {
+@media(max-width:600px) and(max-height:400px) {
     .container{
         padding: 10px
     }
